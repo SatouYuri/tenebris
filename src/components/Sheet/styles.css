@@ -2,6 +2,8 @@
 .sheetContainer {
   background-color: blue;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .charName {
