@@ -4,20 +4,27 @@
   display: flex;
   flex-direction: column;
   color: white;
-  width: 95%;
   align-self: center;
+  padding: 1vh;
+  margin: 1.5vh;
+  border: solid;
 }
 
 .cardImage {
   object-fit: contain;
   max-height: 12vh;
   margin: 1vh;
+  -webkit-filter: drop-shadow(1px 1px 0 white)
+                  drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(1px 1px 0 white) 
+          drop-shadow(-1px -1px 0 white);
 }
 
 .cardTitle {
   display: flex;
   font-family: 'Special Elite', sans-serif;
   justify-content: space-between;
+  font-size: 1.2vh;
 }
 
 .cardTitle h1 {
@@ -30,4 +37,8 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 1vh;
+}
+
+.cardData h1 {
+  margin: 0;
 }

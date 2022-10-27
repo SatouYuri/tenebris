@@ -1,7 +1,7 @@
 import "./styles.css"
 import Attributes from "../Attributes";
 import CountBar from "../CountBar";
-import AtkCard from "../AtkCard";
+import AtkList from "../AtkList";
 
 export default function Sheet() {
   return (
@@ -11,7 +11,7 @@ export default function Sheet() {
       <CountBar countVal={24} maxCountVal={32} color="red"/>
       <CountBar countVal={20} maxCountVal={32} color="blue"/>
       <CountBar countVal={16} maxCountVal={32} color="yellow"/>
-      <AtkCard />
+      <AtkList />
     </div>
   );
 }
