@@ -8,9 +8,9 @@ export default function Sheet() {
     <div className="sheetContainer">
       <h1 className="charName">ISAAC NICARELLI DOS SANTOS SILVA</h1>
       <Attributes />
-      <CountBar countVal={32} color="red"/>
-      <CountBar countVal={32} color="blue"/>
-      <CountBar countVal={32} color="yellow"/>
+      <CountBar countVal={24} maxCountVal={32} color="red"/>
+      <CountBar countVal={20} maxCountVal={32} color="blue"/>
+      <CountBar countVal={16} maxCountVal={32} color="yellow"/>
       <AtkCard />
     </div>
   );

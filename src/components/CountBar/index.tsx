@@ -1,12 +1,13 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css"
 
 type CountBarProps = {
   countVal: number;
+  maxCountVal: number;
   color?: string;
 }; 
 
-const CountBar = ({ countVal, color }: CountBarProps) => {
+const CountBar = ({ countVal, maxCountVal, color }: CountBarProps) => {
   const [count, setCount] = useState<number>(countVal);
 
   const increment = (amount: number) => {
@@ -16,7 +17,14 @@ const CountBar = ({ countVal, color }: CountBarProps) => {
     }
   };
 
-  const getColor = () => {
+  const getBarProgressStyle = () => {
+    const barProgressStyle: React.CSSProperties = {
+      'width': (100 * count/maxCountVal).toString() + '%',
+    }
+    return barProgressStyle;
+  }
+
+  const getBarColorStyle = () => {
     if(color === "red"){
       const countBarStyle: React.CSSProperties = {
         'backgroundColor': 'rgba(140, 0, 0, 0.8)',
@@ -39,11 +47,11 @@ const CountBar = ({ countVal, color }: CountBarProps) => {
     <div className="countBar">
       <button className="countButton" onClick={() => increment(-1)}>-</button>
       <div className="countBackground">
-        <div className="countFront">
-          <div className="countFrontColor" style={getColor()} />
+        <div className="countFront" style={getBarProgressStyle()}>
+          <div className="countFrontColor" style={getBarColorStyle()} />
         </div>
       </div>
-      <p className="counter">{count}/{countVal}</p>
+      <p className="counter">{count}/{maxCountVal}</p>
       <button className="countButton" onClick={() => increment(1)}>+</button>
     </div>
   );
