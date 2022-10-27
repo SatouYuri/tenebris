@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 95%;
+  align-self: center;
+}
+
+.cardImage {
+  object-fit: contain;
+  max-height: 12vh;
+  margin: 1vh;
+}
+
+.cardTitle {
+  display: flex;
+  font-family: 'Special Elite', sans-serif;
+  justify-content: space-between;
+}
+
+.cardTitle h1 {
+  margin: 0;
+}
+
+.cardData {
+  display: flex;
+  font-family: 'Special Elite', sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1vh;
+}
