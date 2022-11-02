@@ -9,13 +9,14 @@ export default function Sheet() {
 
   return (
     <div className="sheetContainer">
-      <h1 className="charName">Ossos ao Mar</h1>
-      <img className="bonesPromoImage" src="https://images.fineartamerica.com/images-medium-large-5/haunted-beach-mihai-florea.jpg"></img>
-      {/* <Attributes /> */}
+      <h4 className="charName"><i>O Brilho de Cristalina - Capítulo III</i></h4>
+      <h1 className="charName2">Ossos ao Mar</h1>
+      {/* <img className="bonesPromoImage" src="https://images.fineartamerica.com/images-medium-large-5/haunted-beach-mihai-florea.jpg"></img> */}
+      <Attributes />
       <CountBar id="Health" countVal={24} maxCountVal={32} color={settingMax ? "edit" : "red"} settingMax={settingMax} />
       <CountBar id="Sanity" countVal={20} maxCountVal={32} color={settingMax ? "edit" : "blue"} settingMax={settingMax} />
       <CountBar id="Stamina" countVal={16} maxCountVal={32} color={settingMax ? "edit" : "yellow"} settingMax={settingMax} />
-      <button className="editMax" onClick={() => setSettingMax(!settingMax)}>Alterar Máximos</button> 
+      <button className="editMax" onClick={() => setSettingMax(!settingMax)}>Editar Máximos</button> 
       {/* <AtkList /> */}
     </div>
   );

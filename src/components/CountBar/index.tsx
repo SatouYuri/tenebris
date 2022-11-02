@@ -46,7 +46,7 @@ const CountBar = ({ id, countVal, maxCountVal, color, settingMax }: CountBarProp
       return countBarStyle;
     }else if(color === "blue"){
       const countBarStyle: React.CSSProperties = {
-        'backgroundColor': 'rgba(0, 0, 240, 0.8)',
+        'backgroundColor': 'rgba(0, 0, 180, 0.8)',
       }
       return countBarStyle;
     }else if(color === "yellow"){
