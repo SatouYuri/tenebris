@@ -18,3 +18,18 @@
   color: white;
   font-size: 3vh;
 }
+
+.editMax { /*Remover mais tarde...*/
+  margin-top: 2vh;
+  width: 30%;
+  padding: 2vh;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 2vh;
+  align-self: center;
+  background-color: transparent;
+  color: white;
+}
+
+.bonesPromoImage {
+  margin: 3vh 1vh;
+}
