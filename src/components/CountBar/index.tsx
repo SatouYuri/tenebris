@@ -6,10 +6,10 @@ type CountBarProps = {
   countVal: number;
   maxCountVal: number;
   color?: string;
-  settingMax?: boolean;
+  editing?: boolean;
 }; 
 
-const CountBar = ({ id, countVal, maxCountVal, color, settingMax }: CountBarProps) => {
+const CountBar = ({ id, countVal, maxCountVal, color, editing }: CountBarProps) => {
   const [countBarId] = useState(`CountBar@${id}`);
   const [count, setCount] = useState<number>(Number(localStorage.getItem(`${countBarId}_count`)) || countVal);
   const [maxCount, setMaxCount] = useState<number>(Number(localStorage.getItem(`${countBarId}_maxCount`)) || maxCountVal); //Remover mais tarde...
@@ -64,14 +64,14 @@ const CountBar = ({ id, countVal, maxCountVal, color, settingMax }: CountBarProp
 
   return (
     <div className="countBar">
-      <button className="countButton" onClick={() => {settingMax ? incrementMax(-1) : increment(-1)}}>-</button>
+      <button className="countButton" onClick={() => {editing ? incrementMax(-1) : increment(-1)}}>-</button>
       <div className="countBackground">
         <div className="countFront" style={getBarProgressStyle()}>
           <div className="countFrontColor" style={getBarColorStyle()} />
         </div>
       </div>
       <p className="counter">{count}/{maxCount}</p>
-      <button className="countButton" onClick={() => {settingMax ? incrementMax(1) : increment(1)}}>+</button>
+      <button className="countButton" onClick={() => {editing ? incrementMax(1) : increment(1)}}>+</button>
     </div>
   );
 }

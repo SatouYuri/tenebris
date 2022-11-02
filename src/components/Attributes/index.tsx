@@ -2,22 +2,26 @@ import "./styles.css"
 import attributeChart from "../../assets/images/attributes.png";
 import React, { useEffect, useState } from "react";
 
-export default function Attributes() {
+type AttributesProps = {
+  editing?: boolean;
+}; 
+
+const Attributes = ({ editing }: AttributesProps) => {
   const [agi, setAgi] = useState<number>(Number(localStorage.getItem("Attributes@Main_agi")));
   const [forc, setForc] = useState<number>(Number(localStorage.getItem("Attributes@Main_forc")));
   const [int, setInt] = useState<number>(Number(localStorage.getItem("Attributes@Main_int")));
   const [pre, setPre] = useState<number>(Number(localStorage.getItem("Attributes@Main_pre")));
   const [vig, setVig] = useState<number>(Number(localStorage.getItem("Attributes@Main_vig")));
 
-  console.log(localStorage.getItem("Attributes@Main_agi"));
-
   const increment = (attr: string) => {
-    let newAttrVal = eval(attr) + 1;
-    if(newAttrVal > 6){
-      newAttrVal = 0;
+    if(editing){
+      let newAttrVal = eval(attr) + 1;
+      if(newAttrVal > 6){
+        newAttrVal = 0;
+      }
+      eval(`set${attr[0].toUpperCase() + attr.slice(1)}(${newAttrVal})`);
+      localStorage.setItem(`Attributes@Main_${attr}`, JSON.stringify(newAttrVal));
     }
-    eval(`set${attr[0].toUpperCase() + attr.slice(1)}(${newAttrVal})`);
-    localStorage.setItem(`Attributes@Main_${attr}`, JSON.stringify(newAttrVal));
   };
 
   return (
@@ -39,3 +43,5 @@ export default function Attributes() {
     </div>
   );
 }
+
+export default Attributes;
