@@ -9,8 +9,8 @@ export default function Sheet() {
 
   return (
     <div className="sheetContainer">
-      <h4 className="charName"><i>O Brilho de Cristalina - Capítulo III</i></h4>
-      <h1 className="charName2">Ossos ao Mar</h1>
+      <h4 className="charName"><i>O Brilho de Cristalina - Capítulo IV</i></h4>
+      <h1 className="charName2">O Lampejo do Abismo</h1>
       <Attributes editing={editing} />
       <CountBar id="Health" countVal={24} maxCountVal={32} color={editing ? "edit" : "red"} editing={editing} />
       <CountBar id="Sanity" countVal={20} maxCountVal={32} color={editing ? "edit" : "blue"} editing={editing} />
