@@ -1,4 +1,3 @@
-import "./styles.css"
 import AtkCard from "../AtkCard";
 import ReactSwipe from "react-swipe";
 
