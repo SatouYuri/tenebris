@@ -1,0 +1,112 @@
+{
+    "sheets": [
+        {
+            "id": 1,
+            "char_name": "Isaac Nicarelli",
+            "player_name": "Yuri Sato",
+            "attributes": {
+                "agi": 1,
+                "str": 1,
+                "int": 1,
+                "pre": 1,
+                "vig": 1
+            },
+            "origin": "Victim",
+            "class": "Combatant",
+            "trail": "Sharpshooter",
+            "exposure": 15,
+            "hp": 32,
+            "ep": 24,
+            "sp": 20,
+            "atk": [
+                {
+                    "name": "HK UMP45",
+                    "test": "4d20+5",
+                    "dmg": "3d6",
+                    "crit": "17/3X"
+                },
+                {
+                    "name": "Masamune",
+                    "test": "4d20+10",
+                    "dmg": "2d10",
+                    "crit": "20/4X"
+                }
+            ],
+            "def": {
+                "dodge": 24,
+                "block": 18,
+                "counter": 19
+            }
+        },
+        {
+            "id": 2,
+            "char_name": "Ozzy Osbourne",
+            "player_name": "Pedhron Zolin",
+            "attributes": {
+                "agi": 1,
+                "str": 2,
+                "int": 3,
+                "pre": 4,
+                "vig": 5
+            },
+            "origin": "Victim",
+            "class": "Combatant",
+            "trail": "Sharpshooter",
+            "exposure": 20,
+            "hp": 40,
+            "ep": 28,
+            "sp": 25,
+            "atk": [
+                {
+                    "name": "Morcegord",
+                    "test": "4d20+10",
+                    "dmg": "2d10",
+                    "crit": "20/4X"
+                }
+            ],
+            "def": {
+                "dodge": 20,
+                "block": 10,
+                "counter": 10
+            }
+        },
+        {
+            "id": 3,
+            "char_name": "Jeej Zaboob",
+            "player_name": "Yuuy Saas",
+            "attributes": {
+                "agi": 1,
+                "str": 6,
+                "int": 1,
+                "pre": 6,
+                "vig": 1
+            },
+            "origin": "Victim",
+            "class": "Combatant",
+            "trail": "Sharpshooter",
+            "exposure": 666,
+            "hp": 32,
+            "ep": 24,
+            "sp": 20,
+            "atk": [
+                {
+                    "name": "HK UMP455",
+                    "test": "4d200+5",
+                    "dmg": "3d60",
+                    "crit": "17/3X"
+                },
+                {
+                    "name": "Masamune Cross",
+                    "test": "4d200+10",
+                    "dmg": "2d100",
+                    "crit": "20/4X"
+                }
+            ],
+            "def": {
+                "dodge": 240,
+                "block": 180,
+                "counter": 190
+            }
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./styles.css"
+import styles from "./styles.module.css"
 
 type CountBarProps = {
   countVal: number;
@@ -44,15 +44,15 @@ const CountBar = ({ countVal, maxCountVal, color }: CountBarProps) => {
   };
 
   return (
-    <div className="countBar">
-      <button className="countButton" onClick={() => increment(-1)}>-</button>
-      <div className="countBackground">
-        <div className="countFront" style={getBarProgressStyle()}>
-          <div className="countFrontColor" style={getBarColorStyle()} />
+    <div className={styles.countBar}>
+      <button className={styles.countButton} onClick={() => increment(-1)}>-</button>
+      <div className={styles.countBackground}>
+        <div className={styles.countFront} style={getBarProgressStyle()}>
+          <div className={styles.countFrontColor} style={getBarColorStyle()} />
         </div>
       </div>
-      <p className="counter">{count}/{maxCountVal}</p>
-      <button className="countButton" onClick={() => increment(1)}>+</button>
+      <p className={styles.counter}>{count}/{maxCountVal}</p>
+      <button className={styles.countButton} onClick={() => increment(1)}>+</button>
     </div>
   );
 }
