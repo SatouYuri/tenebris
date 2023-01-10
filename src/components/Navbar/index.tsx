@@ -11,7 +11,7 @@ export default function Navbar(): JSX.Element {
 	return (
 		<>
 			<div className={styles.bar}>
-				<img className={styles.logo} src="/assets/images/logo/logo125.png" />
+				<img className={styles.logo} src="/assets/images/logo/logo100.png" />
 				<FontAwesomeIcon className={styles.menuIcon} icon={faBars} onClick={() => {setMenuOpen(!menuOpen)}}/>
 			</div>
 			{
