@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 type CountBarProps = {
   countVal: number;

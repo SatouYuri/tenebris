@@ -41,24 +41,18 @@
 
 .agi {
   z-index: 1;
-  color: white;
   font-size: 5vh;
   margin: 6.5vh 0 0 0;
-  font-family: 'Special Elite', sans-serif;
 }
 
 .forInt {
   z-index: 1;
-  color: white;
   font-size: 5vh;
   margin: 3vh 0 0 0vh;
-  font-family: 'Special Elite', sans-serif;
 }
 
 .preVig {
   z-index: 1;
-  color: white;
   margin: 10vh 0 0 0;
   font-size: 5vh;
-  font-family: 'Special Elite', sans-serif;
 }

@@ -1,7 +1,6 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
-  color: white;
   align-self: center;
   padding: 1vh;
   margin: 1.5vh;
@@ -20,7 +19,6 @@
 
 .cardTitle {
   display: flex;
-  font-family: 'Special Elite', sans-serif;
   justify-content: space-between;
   font-size: 1.2vh;
 }
@@ -31,7 +29,6 @@
 
 .cardData {
   display: flex;
-  font-family: 'Special Elite', sans-serif;
   flex-direction: row;
   justify-content: space-between;
   font-size: 1vh;

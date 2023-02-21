@@ -1,10 +1,10 @@
-import styles from "./styles.module.css"
-
 import Attributes from "../Attributes";
 import CountBar from "../CountBar";
 import AtkList from "../AtkList";
 
 import { SheetAPI } from "../../services/SheetAPI";
+
+import styles from "./styles.module.css"
 
 export default function Sheet() {
   const { getAllSheets } = SheetAPI();
@@ -23,7 +23,7 @@ export default function Sheet() {
       <CountBar countVal={24} maxCountVal={32} color="red"/>
       <CountBar countVal={20} maxCountVal={32} color="blue"/>
       <CountBar countVal={16} maxCountVal={32} color="yellow"/>
-      <AtkList />
+      {/* <AtkList /> */}
     </div>
   );
 }
